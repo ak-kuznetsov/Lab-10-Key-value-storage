@@ -8,7 +8,7 @@
 #include <boost/log/trivial.hpp>
 #include <boost/log/utility/setup/console.hpp>
 #include "iostream"
-#include "picosha2.h"
+#include <picosha2.h>
 boost::log ::trivial::severity_level whatIsLevel(std::string logLevel) {
   if (logLevel.empty()) {
     return boost::log::trivial::severity_level::error;
@@ -16,8 +16,7 @@ boost::log ::trivial::severity_level whatIsLevel(std::string logLevel) {
     return boost::log::trivial::severity_level::warning;
   } else if (logLevel == "info") {
     return boost::log::trivial::severity_level::info;
-  } else
-    throw "invalid log level";
+  } else throw "invalid log level";
 }
 void rocksMapHasher::hashStorage(std::string familyName,
                                  std::map<std::string, std::string> kvStorage,

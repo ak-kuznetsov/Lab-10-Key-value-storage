@@ -16,7 +16,7 @@
 #include "iostream"
 #include <string>
 #include "mutex"
-#include "picosha2.h"
+#include <picosha2.h>
 #include "utility"
 class rocksMapHasher {
  private:
