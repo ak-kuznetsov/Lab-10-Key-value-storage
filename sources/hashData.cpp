@@ -16,8 +16,9 @@ boost::log ::trivial::severity_level whatIsLevel(std::string logLevel) {
     return boost::log::trivial::severity_level::warning;
   } else if (logLevel == "info") {
     return boost::log::trivial::severity_level::info;
-  } else
+  } else {
     throw "invalid log level";
+  }
 }
 void rocksMapHasher::hashStorage(std::string familyName,
                                  std::map<std::string, std::string> kvStorage,
