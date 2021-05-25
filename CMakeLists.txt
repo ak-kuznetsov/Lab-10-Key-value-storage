@@ -17,7 +17,8 @@ include("cmake/HunterGate.cmake")
 
 HunterGate(
         URL "https://github.com/cpp-pm/hunter/archive/v0.23.278.tar.gz"
-        SHA1 "35fa55bc1dfcf9f4d7264f8bb26cd1759ce1ae07" FILEPATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/config.cmake )
+        SHA1 "35fa55bc1dfcf9f4d7264f8bb26cd1759ce1ae07"
+        FILEPATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/config.cmake )
 
 # TODO: rename project and delete this comment
 project(template VERSION 0.1.0)
